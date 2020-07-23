@@ -1,0 +1,12 @@
+#!/bin/bash
+
+n=1
+until [ $n -ge 4 ]
+do
+   echo "Retrying command $n out of 3"
+   eval "$@" && exit 0
+   n=$[$n+1]
+   sleep 1
+done
+
+exit 1
