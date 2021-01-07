@@ -8,7 +8,6 @@ batch:
         compute-type: BUILD_GENERAL1_SMALL
     - env:
         compute-type: BUILD_GENERAL1_SMALL
-      identifier: linux_small_2
     - identifier: linux_medium
       env:
         compute-type: BUILD_GENERAL1_MEDIUM
